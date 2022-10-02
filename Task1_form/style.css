@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background:linear-gradient(-45deg,#c579af,#ff628e,#ff917b);
+    height: 600px;
+    width: 70%;
+    margin:50px auto;
+    padding: 75px 200px;
+    border-radius: 10px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(-45deg,#fe8db7,#fd99b4,#ffaeb7);
+    padding: 30px 25px;
+}
+.main h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px;
+}
+.form .name{
+    background-color: #ffb2c4;
+    border: 1px groove #ffb2c4;
+    border-radius: 30px;
+    width: 100%;
+    margin: 12px 0px;
+    padding: 18px;
+    font-size: 20px;
+}
+.submit{
+    margin: 10px;
+    padding: 7px 44px;
+    font-size: 25px;
+}
+.forget, .forget a{
+    color: white;
+    font-size: 20px;
+    margin: 14px 0px;
+}
+.forget a:hover{
+    color: #c579af;
+}
