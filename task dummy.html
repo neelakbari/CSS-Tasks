@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        img{
+            float: right;
+             width:40%;
+             height:a;
+            margin-right: 190px;
+            margin-top:83px;
+            height:475px;
+            cursor: pointer;
+            }
+            span{
+              content: "\27F6";
+        }
+        label{
+                padding-left: 10px;
+                font-size:16px;
+               padding-top: 10px;
+            }
+        
+        .box
+        {
+        position: absolute;
+        top: 50%;
+        Left: 25%;
+        height:475px;
+        transform: translate(-50%, -50%);
+        background:green;
+        padding: 40px;
+        box-sizing: border-box; 
+        margin-left:1%;
+        cursor: pointer;
+        }
+        .box p
+        {
+        font-family: 'jmsans', sans-serif;
+        padding: 0;
+        margin: 0 0 40px; 
+        color: white;
+        font-size: 40px;
+        width: 467px;
+        }
+        .box input
+        {
+        margin-bottom: 30px;
+        width:466px;
+        box-sizing: border-box;
+        box-shadow: none;
+        border: none; 
+        border-bottom: 2px solid #999;
+        outline: none;
+        padding-left: 10px;
+        font-weight: bold;
+        height: 56px;
+        }
+        .box input[type="submit"]
+        {
+        border-bottom: none; 
+        cursor: pointer;
+        color: #fff;
+        margin-bottom: 0;
+        }
+        .box form div
+        {
+        position: relative;
+        }
+        .box form div label
+        {
+        position: absolute; 
+        top: 10px;
+        Left: 0; 
+        color: #999; 
+        transition: .5s; 
+        pointer-events: none;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <div class="box"> 
+        <p>contact us</p> 
+    <form>
+       <div>
+        <input type="text" name="" required=""> 
+        <label>firstname</label>
+      </div>
+      <div>
+        <input type="text" name="" required=""> 
+        <label>last name</label>
+      </div>
+      <div>
+        <input type="text" name="" required=""> 
+        <label>mail</label>
+      </div>
+      <div class="button">
+      <button type="button">submit <span>&#10230;</span></button>
+    </div>
+    
+    </form>
+    
+    </div>
+    
+    <div class="clearfix">
+        <img src="https://www.fnordware.com/superpng/pnggrad8rgb.png"  >
+    </div>
+    
+    
+</body>
+</html>
