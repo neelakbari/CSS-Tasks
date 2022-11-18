@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    width: 400px;
+    /* height: 500px; */
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    /* border: 1px solid white; */
+}
+.container .circle1{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(blue,lightblue);
+    /* background-color: orange; */
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    /* z-index: -1; */
+}
+.container .circle2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(orange,lightcoral);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15%;
+    right: -20%;
+    /* z-index: -1; */
+}
+.container .form{
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(1,1,1,1);
+    padding: 55px 40px;
+}
+form *{
+    letter-spacing: .5px;
+    outline: none;
+    border: none;
+    color: white;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+}
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: white;
+}
+::placeholder{
+    color: rgba(255,255,255,.7)
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form .links{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+a{
+    display: inline-block;
+    /* height: 45px; */
+    /* width: 45%; */
+    background: rgba(255,255,255,.3);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    /* line-height: 45px; */
+}
+a i{
+    margin-right: 10px;
+}
