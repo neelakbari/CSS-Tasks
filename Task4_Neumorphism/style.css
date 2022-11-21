@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(76, 176, 234);
+    height: 100vh;
+}
+.container{
+    height: 500px;
+    width: 700px;
+    padding: 10px 25px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    background: rgb(76, 176, 234);
+    box-shadow: -3px -3px 50px rgba(255,255,255,0.4), 
+    3px 3px 25px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+.container h3 ,.container span{
+    text-align: center;
+    display: block;
+    padding: 2px;
+}
+.container .main{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 30px;
+    /* border: 2px solid; */
+}
+.container .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+}
+.container .left .commoncircle{
+    height: 20px;
+    width: 20px;
+    border: 1px solid ;
+    position: absolute;
+}
+.container .left .circle1{
+    top:-1px;
+    left: -1px;
+    border-radius: 0 0 100% 0;
+    background-color: yellow;
+}
+.container .left .circle2{
+    top: -1px;
+    right: -1px;
+    border-radius: 0 0 0 100%;
+
+}
+.container .left .circle3{
+    right: -1px;
+    bottom: -1px;
+    border-radius: 100% 0 0 0;
+
+}
+.container .left .circle4{
+    bottom: -1px;
+    left: -1px;
+    border-radius: 0 100% 0 0;
+
+}
+
+.container .left .neu{
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%,-50%);
+    /* transform: translateY(-50%) */
+    left: 50%;
+    top: 50%;
+    /* transform: translateX(-50%); */
+    position: absolute;
+    background: rgb(76, 176, 234);
+    box-shadow: -3px -3px 50px rgba(255,255,255,0.4), 
+    3px 3px 25px rgba(0,0,0,0.5);
+    border-radius: 20px;
+
+
+}
+.container .right{
+    width: 50%;
+    height: 100%;
+}
+.container .right .content{
+    /* height: 100%;
+    width: 100%; */
+    padding: 10px 12px;
+    background: rgb(76, 176, 234);
+    box-shadow: -3px -3px 50px rgba(255,255,255,0.4), 
+    3px 3px 25px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+.container .right .content .heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.container .right .content .heading .square{
+    height: 18px;
+    width: 18px;
+    border: 1px solid;
+}
+.container .right .content .heading .hexvalue{
+    height: 18px;
+    width: 46px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+.slide{
+    width: 90%;
+    height: 3px;
+    background: #000;
+    position: relative;
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    border-radius: 50%;
+}
+.content .slider.shape{
+    flex-flow: column;
+    align-items: flex-start;
+}
+.content .board{
+    background-color: #000;
+    color: white;
+    padding: 10px 8px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.content .board p{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.content .board span{
+    color: #55b9f3;
+    text-align: left;
+    display: inline-block;
+}
+.content .board::after{
+    content:'copy';
+    background-color: green;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.container .font-awesome{
+    background: rgb(76, 176, 234);
+    box-shadow: -3px -3px 50px rgba(255,255,255,0.4), 
+    3px 3px 25px rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 4px 7px;
+    margin-top: 7px;
+    border-radius: 8px; 
+}
